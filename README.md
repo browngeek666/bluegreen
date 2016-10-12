@@ -67,7 +67,7 @@ ENTRYPOINT [&quot;npm&quot;, &quot;start&quot;]</code></pre>
 </code></pre>
 <p>If in the browser we now navigate to 192.168.99.100 (or whatever the IP address of your Docker host is) then we should see something like this <a href="https://lostechies.com/gabrielschenker/files/2016/04/Container-Local.png"><img src="https://lostechies.com/gabrielschenker/files/2016/04/Container-Local.png" alt="" title="Container-Local" width="405" height="267" class="alignnone size-full wp-image-1347" /></a></p>
 <h1>Pushing the code to GitHub</h1>
-<p>Push the code to a new GitHub repository. In my case I called it <code>BlueGreen</code>. The repo I use can be found here: <a href="https://github.com/gnschenker/BlueGreen">https://github.com/gnschenker/BlueGreen</a> I have added a simple <code>.gitignore</code> file which makes sure node modules are not pushed to GitHub. I also added a <code>Readme.md</code> for documentation purposes.</p>
+<p>Push the code to a new GitHub repository. In my case I called it <code>BlueGreen</code>. The repo I use can be found here: <a href="https://github.com/browngeek666/bluegreen">https://github.com/browngeek666/bluegreen</a> I have added a simple <code>.gitignore</code> file which makes sure node modules are not pushed to GitHub. I also added a <code>Readme.md</code> for documentation purposes.</p>
 <h1>Creating a Repository in Docker Cloud</h1>
 <p>Create a new repository in Docker Cloud and link it to the above GitHub repository. Try to build the repo in Docker Cloud. It should take a minute or so and succeed.</p>
 <h1>Create a Stack in Docker Cloud</h1>
