@@ -150,17 +150,17 @@ web:
     - global
   target_num_containers: 3
 web-blue:
-  image: 'clearmeasure/blue-green:v1'
+  image: 'browngeek666/blue-green:v1'
   deployment_strategy: high_availability
   environment:
-    - NAME=Gabriel
+    - NAME=DevOps Foundation Class
   restart: always
   target_num_containers: 3
 web-green:
-  image: 'clearmeasure/blue-green:v1'
+  image: 'browngeek666/blue-green:v1'
   deployment_strategy: high_availability
   environment:
-    - NAME=Gabriel
+    - NAME=DevOps Foundation Class
   restart: always
   target_num_containers: 1</code></pre>
 <p></noscript></p>
@@ -168,7 +168,7 @@ web-green:
 <p><a href="https://lostechies.com/gabrielschenker/files/2016/04/blue-v1.png"><img src="https://lostechies.com/gabrielschenker/files/2016/04/blue-v1.png" alt="" title="blue-v1" width="419" height="197" class="alignnone size-full wp-image-1363" /></a></p>
 <h2>Upgrade green to v2</h2>
 <p>Use this command to upgrade <code>web-green</code> to version <code>v2</code></p>
-<p><code>$ docker-cloud service set --image clearmeasure/blue-green:v2 --redeploy --sync web-green</code></p>
+<p><code>$ docker-cloud service set --image browngeek666/blue-green:v2 --redeploy --sync web-green</code></p>
 <p>The service will be automatically redeployed. Now we can scale up <code>web-green</code> to also use 3 instances</p>
 <p><code>$ docker-cloud service scale web-green 3</code></p>
 <p>While we are doing this the application still happily uses <code>v1</code> of our node js image.</p>
