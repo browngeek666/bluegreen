@@ -7,7 +7,7 @@ RUN apt-get update
 RUN apt-get install -y wget openjdk-8-jdk
 RUN update-ca-certificates -f
 RUN wget -O - -o /dev/null http://get.takipi.com/takipi-t4c-installer | bash /dev/stdin -i --sk=S19388#fVXmfNfc0wec5RE5#uR69LvTR0ufwb67kGqD44/Zv+nTSH2QJA6eFGGNcHIU=#dd1b
-RUN /opt/takipi/etc/takipi-setup-machine-name browngeek666/blue-green
+RUN /opt/takipi/etc/takipi-setup-machine-name browngeek666/bluegreen
 RUN wget https://s3.amazonaws.com/app-takipi-com/chen/scala-boom.jar -O scala-boom.jar
 CMD java -agentlib:TakipiAgent -jar scala-boom.jar
 
