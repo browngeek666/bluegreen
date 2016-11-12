@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Install app dependencies
 RUN apt-get update
-RUN apt-get install -y wget openjdk-8-jdk
+RUN apt-get install -y wget default-jre
 RUN update-ca-certificates -f
 RUN wget -O - -o /dev/null http://get.takipi.com/takipi-t4c-installer | bash /dev/stdin -i --sk=S19388#fVXmfNfc0wec5RE5#uR69LvTR0ufwb67kGqD44/Zv+nTSH2QJA6eFGGNcHIU=#dd1b
 RUN /opt/takipi/etc/takipi-setup-machine-name browngeek666/bluegreen
