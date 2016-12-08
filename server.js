@@ -9,7 +9,7 @@ http.createServer(function(req, res){
     '<h1>Hello DevOpsFoundations Class'+name+'</h1> \
      <p>This is a demo for <em>blue-green deployment</em></p> \
      <p>from server: '+hostname+'</p> \
-     <p>Version: v2 \
+     <p>Version: v3 \
      <hr><p>Adding some more test just for the fun of it</p>';
   res.end(body);
 }).listen(port, function(){
