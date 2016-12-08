@@ -1,6 +1,7 @@
 # Blue Green Deployment
 Sample node js application to demo blue-green deployment in Docker Cloud
 <h1>Introduction</h1>
+FROM Gabriel Schenker - thx
 <p>This post is part of my series about <a href="https://lostechies.com/gabrielschenker/2016/01/23/implementing-a-cicd-pipeline/">implementing a CI/CD pipeline</a>. Please refer to <a href="https://lostechies.com/gabrielschenker/2016/01/23/implementing-a-cicd-pipeline/">this</a> post for an introduction and a full table of content. In this post I want to demonstrate step by step how to create a simple Node JS application and run it as a stack in <a href="https://cloud.docker.com/">Docker Cloud</a>. This includes creating a repository in GitHub and linking it to a repository in Docker Cloud where we will use the auto build feature to create Docker images of the application. I will also show how to scale and load balance the application for high availability and even discuss how we can exercise blue-green deployment to achieve zero down time deployments.</p>
 <h1>The Application</h1>
 <p>To not over complicate things we create a simple node JS application consisting of a <code>package.json</code> file and a <code>server.js</code> file. The content of the <code>package.json</code> file is</p>
